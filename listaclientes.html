@@ -1,0 +1,115 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-1"></div>
+  <div class="col-xs-12 col-sm-10">
+    <h2>
+    listado de Clientes</h2>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th># Cliente</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Cedula</th>
+        <th>Email</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+      <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+        <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+         <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+        <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+       <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+        <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+       <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+      <tr>
+        <td>12340</td>
+        <td>Armando</td>
+        <td>Casas</td>
+        <td>1090765432</td>
+        <td>armandoc@hotmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="clientes"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-group col-xs-12 col-sm-12">
+     <button type="submit" class="btn btn-success" id="button" href="envios.html">Nuevo Envio</button>
+  </div>
+  </div>
+  <div class="col-xs-12 col-sm-1"></div>
+</div>
+<script type="text/javascript">
+   $("td a").click(function(event){
+      event.preventDefault();
+      if($(this).data('mm')!= null){
+           $("#contenedor").load($(this).data('mm')+'.html');
+      }
+  });
+</script>
